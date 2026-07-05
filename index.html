@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Dard-E-Sitam, Dard-E-Jana</title>
+    <style>
+        :root {
+            --primary: #1e3a5f;
+            --primary-light: #2c5282;
+            --accent: #f6ad55;
+            --accent-glow: #ed8936;
+            --text: #1a202c;
+            --text-light: #4a5568;
+            --bg: #f7fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --radius: 16px;
+            --shadow: 0 10px 40px rgba(30, 58, 95, 0.12);
+            --shadow-hover: 0 20px 60px rgba(30, 58, 95, 0.18);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 50%, #e2e8f0 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3.5rem 1.5rem 3rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, #1e3a5f 100%);
+            color: white;
+            border-radius: var(--radius);
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, 30px); }
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            letter-spacing: -0.5px;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        header .package {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            background: rgba(255,255,255,0.12);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-family: 'Courier New', monospace;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        header .badge {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.4rem 1rem;
+            background: linear-gradient(90deg, var(--accent), var(--accent-glow));
+            color: var(--primary);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(246, 173, 85, 0.4);
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2.25rem;
+            margin-bottom: 1.75rem;
+            border: 1px solid var(--border);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--accent), var(--accent-glow));
+            border-radius: var(--radius) 0 0 var(--radius);
+        }
+
+        .card h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .card h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .card p, .card li {
+            color: var(--text-light);
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            line-height: 1.85;
+        }
+
+        .card ul, .card ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card li {
+            margin-bottom: 0.6rem;
+        }
+
+        .card li::marker {
+            color: var(--accent-glow);
+        }
+
+        .card strong {
+            color: var(--primary);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+            border: 1px solid #fed7aa;
+            border-left: 5px solid var(--accent-glow);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin: 1.25rem 0;
+            position: relative;
+        }
+
+        .highlight-box::before {
+            content: '💡';
+            position: absolute;
+            top: -12px;
+            left: 15px;
+            font-size: 1.2rem;
+            background: white;
+            padding: 0 5px;
+        }
+
+        .highlight-box p {
+            color: #7c2d12;
+            margin: 0;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-item {
+            padding: 1.25rem 1rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+        }
+
+        .feature-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .feature-item strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .feature-item span {
+            color: var(--text-light);
+            font-size: 0.8rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.25rem;
+        }
+
+        .contact-item {
+            padding: 1.25rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 15px rgba(30, 58, 95, 0.08);
+        }
+
+        .contact-item strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-item span {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            word-break: break-all;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 1.75rem 2rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toc::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--accent) 0%, transparent 100%);
+            opacity: 0.1;
+            border-radius: 0 0 0 100%;
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin: 0;
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        .toc li {
+            margin-bottom: 0.6rem;
+            break-inside: avoid;
+        }
+
+        .toc a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: block;
+            padding: 0.2rem 0;
+        }
+
+        .toc a:hover {
+            color: var(--accent-glow);
+            padding-left: 0.5rem;
+        }
+
+        .toc a::before {
+            content: '→ ';
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .toc a:hover::before {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.85rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: var(--radius);
+            margin-top: 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-glow));
+        }
+
+        footer p {
+            position: relative;
+            z-index: 1;
+        }
+
+        footer .app-info {
+            margin-top: 0.75rem;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            font-family: 'Courier New', monospace;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 2.5rem 0;
+            color: var(--accent);
+            font-size: 1.2rem;
+            letter-spacing: 0.8rem;
+            opacity: 0.6;
+        }
+
+        .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-glow));
+            color: white;
+            border-radius: 50%;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-right: 0.5rem;
+            box-shadow: 0 2px 8px rgba(237, 137, 54, 0.4);
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .card, .toc, header, footer {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+            }
+            header, footer {
+                background: #1e3a5f !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .toc ul {
+                columns: 1;
+            }
+            .card::before {
+                display: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+            header {
+                padding: 2.5rem 1rem 2rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            .toc ul {
+                columns: 1;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section[id] {
+            scroll-margin-top: 2rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+
+<header>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Dard-E-Sitam, Dard-E-Jana</p>
+    <span class="package">com.bluenoveljana.mywebapp</span>
+    <div class="badge">Blue Novels</div>
+</header>
+
+<div class="container">
+
+    <nav class="toc">
+        <h2>📋 Table of Contents</h2>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#features">App Features</a></li>
+            <li><a href="#collect">Information We Collect</a></li>
+            <li><a href="#use">How We Use Information</a></li>
+            <li><a href="#permissions">Device Permissions</a></li>
+            <li><a href="#share">Information Sharing</a></li>
+            <li><a href="#security">Data Security</a></li>
+            <li><a href="#rights">Your Rights</a></li>
+            <li><a href="#children">Children's Privacy</a></li>
+            <li><a href="#changes">Policy Changes</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="card" id="intro">
+        <h2><span class="section-num">1</span>Introduction</h2>
+        <p>Welcome to <strong>Dard-E-Sitam, Dard-E-Jana</strong> ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (com.bluenoveljana.mywebapp).</p>
+        <div class="highlight-box">
+            <p>By downloading and using Dard-E-Sitam, Dard-E-Jana, you agree to the collection and use of information in accordance with this policy.</p>
+        </div>
+    </section>
+
+    <section class="card" id="features">
+        <h2><span class="section-num">2</span>App Features</h2>
+        <p>Dard-E-Sitam, Dard-E-Jana is designed to provide an immersive novel reading experience with the following features:</p>
+        <div class="features-grid">
+            <div class="feature-item">
+                <span class="icon">📖</span>
+                <strong>Real Book Reading</strong>
+                <span>Authentic page-turning experience</span>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🔖</span>
+                <strong>Bookmarks & Resume</strong>
+                <span>Save progress and resume anytime</span>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🔍</span>
+                <strong>Pinch to Zoom</strong>
+                <span>Zoom and drag to move pages</span>
+            </div>
+            <div class="feature-item">
+                <span class="icon">📤</span>
+                <strong>Share Novels</strong>
+                <span>Share via WhatsApp, Facebook, Twitter & more</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="card" id="collect">
+        <h2><span class="section-num">3</span>Information We Collect</h2>
+
+        <h3>Information You Provide</h3>
+        <ul>
+            <li>Reading preferences and bookmark data stored locally on your device</li>
+            <li>Any feedback or correspondence you send us</li>
+        </ul>
+
+        <h3>Automatically Collected Information</h3>
+        <ul>
+            <li>Device information (model, OS version, screen resolution)</li>
+            <li>App usage statistics (pages read, time spent reading)</li>
+            <li>Crash reports and diagnostic data for app improvement</li>
+            <li>IP address and general location (country/region level only)</li>
+        </ul>
+
+        <h3>Local Storage</h3>
+        <p>Your bookmarks, reading progress, and preferences are stored locally on your device. We do not upload your reading history or bookmarks to our servers unless you explicitly enable cloud backup.</p>
+    </section>
+
+    <section class="card" id="use">
+        <h2><span class="section-num">4</span>How We Use Your Information</h2>
+        <p>We use the collected information to:</p>
+        <ol>
+            <li>Provide and maintain the reading experience and app functionality</li>
+            <li>Save your bookmarks and resume reading position across sessions</li>
+            <li>Enable zoom and page navigation features</li>
+            <li>Facilitate sharing novels with friends through third-party apps</li>
+            <li>Improve app performance and fix technical issues</li>
+            <li>Understand reading trends to enhance our novel collection</li>
+            <li>Send important app updates and notifications (if opted in)</li>
+        </ol>
+    </section>
+
+    <section class="card" id="permissions">
+        <h2><span class="section-num">5</span>Device Permissions</h2>
+        <p>To provide our features, Dard-E-Sitam, Dard-E-Jana may request the following permissions:</p>
+        <ul>
+            <li><strong>Storage:</strong> To save bookmarks, reading progress, and cached novel content locally on your device</li>
+            <li><strong>Internet:</strong> To download novel content and receive app updates</li>
+            <li><strong>Share/Intent:</strong> To enable sharing novels via WhatsApp, Facebook, Twitter, and other social platforms</li>
+        </ul>
+        <p>You can manage these permissions through your device settings at any time.</p>
+    </section>
+
+    <section class="card" id="share">
+        <h2><span class="section-num">6</span>Information Sharing and Disclosure</h2>
+        <p>We respect your privacy. We do not sell your personal information. We may share data only in these limited circumstances:</p>
+        <ul>
+            <li><strong>Analytics Providers:</strong> Anonymous usage data shared with trusted analytics services (e.g., Firebase Analytics) to help us improve the app</li>
+            <li><strong>Social Sharing:</strong> When you choose to share a novel, the shared content is sent directly through your selected platform (WhatsApp, Facebook, Twitter, etc.)</li>
+            <li><strong>Legal Requirements:</strong> If required by law or to protect our rights and safety</li>
+            <li><strong>Service Providers:</strong> With trusted partners who assist us in operating the app</li>
+        </ul>
+    </section>
+
+    <section class="card" id="security">
+        <h2><span class="section-num">7</span>Data Security</h2>
+        <p>We take reasonable measures to protect your information:</p>
+        <ul>
+            <li>All data transmissions are encrypted using industry-standard protocols</li>
+            <li>Your reading progress and bookmarks are stored securely on your device</li>
+            <li>Regular security updates to protect against vulnerabilities</li>
+            <li>Limited access to any server-stored data by authorized personnel only</li>
+        </ul>
+        <p>While we strive to protect your data, no method of electronic storage is 100% secure.</p>
+    </section>
+
+    <section class="card" id="rights">
+        <h2><span class="section-num">8</span>Your Privacy Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li><strong>Access:</strong> Request information about what data we hold about you</li>
+            <li><strong>Delete:</strong> Clear your local app data by uninstalling the app or clearing app cache</li>
+            <li><strong>Opt-out:</strong> Disable analytics and crash reporting in app settings</li>
+            <li><strong>Control:</strong> Manage app permissions through your device settings</li>
+        </ul>
+    </section>
+
+    <section class="card" id="children">
+        <h2><span class="section-num">9</span>Children's Privacy</h2>
+        <p>Dard-E-Sitam, Dard-E-Jana is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can remove such data.</p>
+    </section>
+
+    <section class="card" id="changes">
+        <h2><span class="section-num">10</span>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the updated policy within the app and updating the effective date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+    </section>
+
+    <section class="card" id="contact">
+        <h2><span class="section-num">11</span>Contact Us</h2>
+        <p>If you have any questions, concerns, or requests about this Privacy Policy or our data practices, please contact us:</p>
+
+        <div class="contact-grid">
+            <div class="contact-item">
+                <strong>📧 Email</strong>
+                <span>blueappsmanager@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <strong>📱 App</strong>
+                <span>Dard-E-Sitam, Dard-E-Jana</span>
+            </div>
+            <div class="contact-item">
+                <strong>📦 Package</strong>
+                <span>com.bluenoveljana.mywebapp</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Blue Novels</strong> — Your Premium Novel Reading Experience</p>
+        <p class="app-info">Dard-E-Sitam, Dard-E-Jana | com.bluenoveljana.mywebapp</p>
+    </footer>
+
+</div>
+
+<script>
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
